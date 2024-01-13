@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Content</title>
+    <script>
+        function requestFollow() {
+            var followConfirmed = confirm("To access exclusive content, please follow our Instagram page. Click OK after you've followed.");
+
+            if (followConfirmed) {
+                // Redirect to your Instagram page
+                window.location.href = 'https://www.instagram.com/techverge_nellorien/';
+            } else {
+                alert("Sorry, you need to follow our Instagram page to access the content.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Exclusive Content!</h1>
+    <p>This content is special! To access it, please follow our <a href="https://www.instagram.com/your_instagram_page/" target="_blank">Instagram page</a>.</p>
+    <button onclick="requestFollow()">Follow on Instagram</button>
+
+    <!-- Your Content Goes Here -->
+    <div>
+        <h2>Exclusive Content:</h2>
+        <p>This is where you can include your text. Check out this <a href="https://example.com" target="_blank">link</a>.</p>
+        <p>Another paragraph with <a href="https://example2.com" target="_blank">another link</a>.</p>
+    </div>
+</body>
+</html>
